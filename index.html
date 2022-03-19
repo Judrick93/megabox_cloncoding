@@ -144,9 +144,9 @@
     <!-- //baner -->
 
     <section id="movie">
-        <h2 class="ir_so">최신 영화 정보</h2>
         <div class="container">
             <div class="row">
+                <h2 class="ir_so">영화 예매</h2> 
                 <div class="movie">
                     <div class="movie_title">
                         <ul>
@@ -225,7 +225,7 @@
                                         </div>
                                     </div>
                                     <div class="infor">
-                                        <h3><span class="icon a15 ir_pm">15세 이상 관람</span> <strong>마약왕</strong></h3>
+                                        <h3><span class="icon a19 ir_pm">19세 이상 관람</span> <strong>마약왕</strong></h3>
                                         <div class="infor_btn">
                                             <a href="#">상세정보</a>
                                             <a href="#">예매하기</a>
@@ -235,15 +235,15 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="assets/img/poster04.jpg" srcset="assets/img/poster04@2.jpg 2x" alt="마약왕">
+                                            <img src="assets/img/poster05.jpg" srcset="assets/img/poster05@2.jpg 2x" alt="Her">
                                         </figure>
-                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="rank"><strong>5</strong></div>
                                         <div class="mx">
                                             <span class="icon m ir_pm">MX</span>
                                         </div>
                                     </div>
                                     <div class="infor">
-                                        <h3><span class="icon a15 ir_pm">15세 이상 관람</span> <strong>마약왕</strong></h3>
+                                        <h3><span class="icon all ir_pm">15세 이상 관람</span> <strong>Her</strong></h3>
                                         <div class="infor_btn">
                                             <a href="#">상세정보</a>
                                             <a href="#">예매하기</a>
@@ -253,15 +253,15 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="assets/img/poster04.jpg" srcset="assets/img/poster04@2.jpg 2x" alt="마약왕">
+                                            <img src="assets/img/poster06.jpg" srcset="assets/img/poster06@2.jpg 2x" alt="괴물">
                                         </figure>
-                                        <div class="rank"><strong>4</strong></div>
+                                        <div class="rank"><strong>6</strong></div>
                                         <div class="mx">
                                             <span class="icon m ir_pm">MX</span>
                                         </div>
                                     </div>
                                     <div class="infor">
-                                        <h3><span class="icon a15 ir_pm">15세 이상 관람</span> <strong>마약왕</strong></h3>
+                                        <h3><span class="icon a15 ir_pm">15세 이상 관람</span> <strong>괴물</strong></h3>
                                         <div class="infor_btn">
                                             <a href="#">상세정보</a>
                                             <a href="#">예매하기</a>
@@ -285,7 +285,7 @@
                                         </div>
                                     </div>
                                     <div class="infor">
-                                        <h3><span class="icon all ir_pm">전체관람가</span> <strong>침묵</strong></h3>
+                                        <h3><span class="icon a12 ir_pm">전체관람가</span> <strong>Her</strong></h3>
                                         <div class="infor_btn">
                                             <a href="#">상세정보</a>
                                             <a href="#">예매하기</a>
@@ -621,6 +621,32 @@
     </section>  
     <!-- //movie -->
 
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="event">
+                    <h2>새로운 이벤트</h2>
+                    <div class="event_left">
+                        <div class="event_slider">
+                            <img src="assets/img/event01.jpg" srcset="assets/img/event01@2.jpg 2x" alt="시티 패키지">
+                        </div>
+                        <div class="event_box1">
+                            <img src="assets/img/event02.jpg" srcset="assets/img/event02@2.jpg 2x" alt="남포항점 2019 시즌할인권">
+                        </div>
+                        <div class="event_box2">
+                            <img src="assets/img/event03.jpg" srcset="assets/img/event03@2.jpg 2x" alt="설 선물 이수점 전용 관람권 런칭">
+                        </div>
+                    </div>
+                    <div class="event_right">
+                        <img src="assets/img/event04.jpg" srcset="assets/img/event04@2.jpg 2x" alt="사표 대신 영화표">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //event -->
+
 
 
     <!-- 자바스크립트 라이브러리 -->
@@ -654,7 +680,26 @@
                 enabled: true,
                 onlyInViewport: false,
             },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 24
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
+            },
+            
+            
+            
         });
+
 
         //영화 차트 탭메뉴
         var movBtn = $(".movie_title > ul > li");
