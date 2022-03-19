@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
@@ -80,8 +81,8 @@
     <!-- //header -->
 
     <section id="banner">
-        <h2 class="ir_so">최신 영화 소식</h2>
         <div class="banner_menu">
+            <h2 class="ir_so">최신 영화 소식</h2>
             <div class="container">
                 <div class="row">
                     <div class="bm_left">
@@ -106,8 +107,18 @@
             </div>
         </div>
         <div class="slider">
-            <img src="assets/img/main_slider01.jpg" alt="베스와 베라">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ss1">Slide 1</div>
+                    <div class="swiper-slide ss2">Slide 2</div>
+                    <div class="swiper-slide ss3">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
+            
     </section>
 
 
@@ -116,5 +127,20 @@
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/ie-checker.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 </html>
